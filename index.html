@@ -67,25 +67,19 @@
       			
   						<li>
 								<a class="nav flat-box" href="/blog/archives/" rel="nofollow" id="blogarchives">
-									<i class="fas fa-folder-open fa-fw"></i>&nbsp;归档
+									<i class="fas fa-archive fa-fw"></i>&nbsp;归档
 								</a>
 							</li>
       			
   						<li>
-								<a class="nav flat-box" href="/blog/friend/" rel="nofollow" id="blogfriend">
+								<a class="nav flat-box" href="/blog/friends/" rel="nofollow" id="blogfriends">
 									<i class="fas fa-link fa-fw"></i>&nbsp;朋友
 								</a>
 							</li>
       			
   						<li>
 								<a class="nav flat-box" href="/blog/message/" rel="nofollow" id="blogmessage">
-									<i class="fas fa-archive fa-fw"></i>&nbsp;留言
-								</a>
-							</li>
-      			
-  						<li>
-								<a class="nav flat-box" href="/blog/about/" rel="nofollow" id="blogabout">
-									<i class="fas fa-about fa-fw"></i>&nbsp;关于
+									<i class="fas fa-comments fa-fw"></i>&nbsp;留言
 								</a>
 							</li>
       			
@@ -96,7 +90,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜索">
+						<input type="text" class="input u-search-input" placeholder="Search">
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -127,12 +121,6 @@
         
           
             <li>
-							<a class="nav flat-box" href="/" id="home">
-								<i class="fas fa-clock fa-fw"></i>&nbsp;近期文章
-							</a>
-            </li>
-          
-            <li>
 							<a class="nav flat-box" href="/blog/archives/" rel="nofollow" id="blogarchives">
 								<i class="fas fa-archive fa-fw"></i>&nbsp;文章归档
 							</a>
@@ -151,8 +139,8 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="/about/" rel="nofollow" id="about">
-								<i class="fas fa-info-circle fa-fw"></i>&nbsp;关于小站
+							<a class="nav flat-box" href="/blod/about/" rel="nofollow" id="blodabout">
+								<i class="fas fa-user-secret fa-fw"></i>&nbsp;关于小站
 							</a>
             </li>
           
@@ -346,13 +334,6 @@
   <div class="content pure">
     <ul class="grid navgation">
       
-        <li><a class="flat-box" title="/" href="/" id="home">
-          
-            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
-          
-          近期文章
-        </a></li>
-      
         <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/" rel="nofollow" id="blogarchives">
           
             <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
@@ -374,9 +355,9 @@
           主题文档
         </a></li>
       
-        <li><a class="flat-box" title="/about/" href="/about/" rel="nofollow" id="about">
+        <li><a class="flat-box" title="/blog/about/" href="/blog/about/" rel="nofollow" id="blogabout">
           
-            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-user-secret fa-fw" aria-hidden="true"></i>
           
           关于小站
         </a></li>
@@ -384,22 +365,6 @@
     </ul>
   </div>
 </section>
-
-          
-        
-      
-        
-          
-          
-            
-
-          
-        
-      
-        
-          
-          
-            
 
           
         
@@ -464,19 +429,19 @@
     </div>
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
-    作为主题
+    as theme
     
-      ，
-      总访问量为
+      , 
+      total visits
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      次
+      times
     
-    。
+    . 
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -557,15 +522,15 @@
 <!-- 复制 -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "复制成功";
-  let COPY_FAILURE = "复制失败";
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
   /*页面载入完成后，创建复制按钮*/
   !function (e, t, a) {
     /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
