@@ -2,24 +2,24 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 <meta charset="utf-8">
-<title>Method类 - yuanyujin&#39;s blog</title>
+<title>java8新特性lambda表达式、方法引用、函数式接口、默认方式、静态方法 - yuanyujin&#39;s blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://yoursite.com/post/Method/">
+<link rel="canonical" href="http://yoursite.com/post/java8部分新特性/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<meta name="description" content="Method 提供关于类或接口上单独某个方法（以及如何访问该方法）的信息。 一个完整方法包含的属性有：  方法上使用的注解 方法的修饰符 方法上定义的泛型参数 方法的返回值 方法名称 方法参数(泛型、注解) 方法抛出的异常  1234567891011121314151617@MyAnnotationpublic &amp;lt;T&amp;gt; boolean add(List&amp;lt;T&amp;gt; list,T">
-<meta name="keywords" content="Method,java">
+<meta name="description" content="lambda 表达式线程的用法原始的线程用法 1234567//使用匿名内部类的方式启动多线程new Thread(new Runnable() &amp;#123;    @Override    public void run() &amp;#123;        System.out.println(&amp;quot;这是使用匿名内部类的方式。。。&amp;quot;);    &amp;#125;&amp;#125;).start(">
+<meta name="keywords" content="java,Lambda">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Method类">
-<meta property="og:url" content="http://yoursite.com/post/Method/index.html">
+<meta property="og:title" content="java8新特性lambda表达式、方法引用、函数式接口、默认方式、静态方法">
+<meta property="og:url" content="http://yoursite.com/post/java8部分新特性/index.html">
 <meta property="og:site_name" content="yuanyujin&#39;s blog">
-<meta property="og:description" content="Method 提供关于类或接口上单独某个方法（以及如何访问该方法）的信息。 一个完整方法包含的属性有：  方法上使用的注解 方法的修饰符 方法上定义的泛型参数 方法的返回值 方法名称 方法参数(泛型、注解) 方法抛出的异常  1234567891011121314151617@MyAnnotationpublic &amp;lt;T&amp;gt; boolean add(List&amp;lt;T&amp;gt; list,T">
+<meta property="og:description" content="lambda 表达式线程的用法原始的线程用法 1234567//使用匿名内部类的方式启动多线程new Thread(new Runnable() &amp;#123;    @Override    public void run() &amp;#123;        System.out.println(&amp;quot;这是使用匿名内部类的方式。。。&amp;quot;);    &amp;#125;&amp;#125;).start(">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556972020183&di=d7dd37f27a732d886acb38da9dd92e34&imgtype=0&src=http%3A%2F%2Fimg.e0575.com%2Fattachment%2FDay_150709%2F144_1731041_6d1882ad2e6dc29.jpg%3F117">
-<meta property="og:updated_time" content="2019-05-18T14:28:43.933Z">
+<meta property="og:updated_time" content="2019-05-20T00:52:05.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Method类">
-<meta name="twitter:description" content="Method 提供关于类或接口上单独某个方法（以及如何访问该方法）的信息。 一个完整方法包含的属性有：  方法上使用的注解 方法的修饰符 方法上定义的泛型参数 方法的返回值 方法名称 方法参数(泛型、注解) 方法抛出的异常  1234567891011121314151617@MyAnnotationpublic &amp;lt;T&amp;gt; boolean add(List&amp;lt;T&amp;gt; list,T">
+<meta name="twitter:title" content="java8新特性lambda表达式、方法引用、函数式接口、默认方式、静态方法">
+<meta name="twitter:description" content="lambda 表达式线程的用法原始的线程用法 1234567//使用匿名内部类的方式启动多线程new Thread(new Runnable() &amp;#123;    @Override    public void run() &amp;#123;        System.out.println(&amp;quot;这是使用匿名内部类的方式。。。&amp;quot;);    &amp;#125;&amp;#125;).start(">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556972020183&di=d7dd37f27a732d886acb38da9dd92e34&imgtype=0&src=http%3A%2F%2Fimg.e0575.com%2Fattachment%2FDay_150709%2F144_1731041_6d1882ad2e6dc29.jpg%3F117">
 <link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
 <link rel="stylesheet" href="/styles.f3ea1e219d757e5d89f5.css">
